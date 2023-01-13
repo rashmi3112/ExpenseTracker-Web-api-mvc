@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Expense Tracker</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/alertifyjs/alertify.min.css" rel="stylesheet" />
+    <link href="~/Content/alertifyjs/themes/default.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0b6b676505.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="sidepanel" class="sidebar">
+            <a href="javascript:void(0)" class="btnclose" onclick="closeToggle()">&times;</a>
+            @Html.ActionLink("Home", "Index", "Home")
+            @Html.ActionLink("Category", "Index", "Category")
+            @Html.ActionLink("Expense", "Index", "Expense")
+            @Html.ActionLink("Limit", "Index", "Limit")
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <button class="btnopen" onclick="openToggle()">&#9776;</button>
+            <a href="@Url.Action("Index","Home")" id="appname">Expense Tracker</a>
+        </nav>
+    </header>
+    <div class="container body-content" id="main">
+        @RenderBody()
+        <hr />
+        <footer class="footer">
+            <p>&copy; @DateTime.Now.Year - Expense Tracker</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/Scripts/alertify.min.js")
+    @Scripts.Render("~/Scripts/jquery.validate.unobtrusive.min.js")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
+<script>
+    function openToggle() {
+        document.getElementById("sidepanel").style.width = "250px";
+        document.getElementById("navbar").style.marginLeft = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+    function closeToggle() {
+        document.getElementById("sidepanel").style.width = "0";
+        document.getElementById("navbar").style.marginLeft = "0";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+

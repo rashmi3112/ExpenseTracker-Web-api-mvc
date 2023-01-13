@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ExpenseTrackerMVC.Models.mvcCategoryModel>
+
+<table class="table">
+    <h4>Categories</h4>
+    <thead class="table-heading">
+        <tr>
+            <th>
+                Category
+            </th>
+            <th>
+                Amount
+            </th>
+        </tr>
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.categoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.amount)
+            </td>
+        </tr>
+    }
+
+</table>
+@section scripts{
+    <script>
+        $(function () {
+            var successMessage = '@TempData["SuccessMessage"]'
+            if (successMessage != '')
+                alertify.success(successMessage);
+        });
+        function Delete(id) {
+            alertify.confirm('Delete category', 'Are you sure you want to delete this category ?', function () {
+                window.location.href = '@Url.Action("Delete","Category")/' + id;
+            }, null);
+        }
+    </script>
+}

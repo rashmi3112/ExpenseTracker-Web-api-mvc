@@ -1,0 +1,245 @@
+﻿body {
+    font-family:Arial;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*nav and sidebar css end*/
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #6a6868;
+    overflow-x: hidden; /* for horizontal scroll */
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+    .sidebar a:hover {
+        color: #2bb0e1;
+    }
+
+.sidebar .btnclose {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.btnopen {
+    font-size: 24px;
+    background: #6a6868;
+    color: white;
+    padding: 5px;
+    border: none;
+}
+
+.btnopen:hover {
+    background-color: rgb(147, 142, 142);
+}
+
+#navbar {
+    background: #6a6868;
+    transition: margin-left .5s;
+    height: 60px;
+    cursor: pointer;
+    margin-top: 0px;
+    top: 0;
+    border-radius: 0px;
+}
+nav a{
+    color:white;
+    font-size:20px;
+    text-decoration:none;
+}
+    nav a:hover {
+        text-decoration: none;
+        color: #2bb0e1;
+    }
+
+#main {
+    transition: margin-left .5s;
+}
+/*nav and sidebar css end*/
+
+.breadcrumb{
+    margin-top:10px;
+}
+
+/*home css start*/
+.row{
+    padding-left:20px;
+}
+.inner p{
+    font-size:18px;
+    padding:3px;
+    font-weight:bold;
+    padding:5px;
+}
+.icon i{
+    margin-left:210px;
+}
+.small-box a {
+    color: #434141;
+    margin-left:20px;
+    padding:5px;
+}
+
+.container{
+    padding:5px;
+}
+/*home css end*/
+
+/*form css start*/
+.submit {
+    border: none;
+    background: #54d481;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 22px;
+}
+.form-body {
+    margin-top: 50px;
+    width: 600px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px #848099;
+    margin-left: 130px;
+    padding-top: 15px;
+    background: #e4e0e0;
+    border-radius:5px;
+}
+.form-body input, label {
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left:12px;
+
+}
+.form-body #form-heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-indent: 40%;
+    padding: 5px;
+}
+select {
+    font-size: 16px;
+}
+/*form css end*/
+
+/*button css start*/
+#submit {
+    border: none;
+    background: #489965;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight:bold;
+    padding:8px;
+    margin-bottom:10px;
+    margin-right:224px; 
+    border-radius:5px;
+}
+    #submit:hover {
+        background: #328f52;
+    }
+#reset {
+    border: none;
+    background: #259ac3;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 8px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 24px;
+    border-radius: 5px;
+}
+    #reset:hover {
+        background: #2bb0e1;
+    }
+#del {
+    border: none;
+    background: #f84158;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+    #del:hover {
+        background: #f2243f;
+    }
+#edit {
+    border: none;
+    background: #489965;
+    border-radius: 2px;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+    #edit:hover {
+        background: #4b9163;
+    }
+/*button css end*/
+
+/*table css start*/
+table {
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px 1px #848099;
+    background: #f0eded;
+    border-radius: 2px;
+}
+thead {
+    background: #2bb0e1;
+    color: white;
+    font-size: 16px;
+}
+tbody{
+    font-size:16px;
+}
+tr:hover {
+    background: #bcc0e5;
+}
+/*table css end*/
+
+/*Footer css start*/
+.footer p {
+    color: white;
+    background-color: #6a6868;
+    font-size:16px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+/*Footer css end*/
+

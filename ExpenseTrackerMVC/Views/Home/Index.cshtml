@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-lg-3 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-info" id="b1">
+            <div class="inner">
+
+                <p>Total Categories amount</p>
+                <p>@ViewBag.totcat</p>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-list"></i>
+            </div>
+            Categories: @ViewBag.CategoryCount<a href="@Url.Action("Index","Category")" class="small-box-footer"> More info <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+
+    <div class="col-lg-3 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-primary">
+            <div class="inner">
+
+                <p>Total Expenses</p>
+                <p>@ViewBag.totexp</p>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-comments-dollar"></i>
+            </div>
+            Expenses: @ViewBag.expCount<a href="@Url.Action("Index","Expense")" class="small-box-footer"> More info <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+    <div class="col-lg-3 col-xs-6">
+        <!-- small box -->
+        <div class="small-box bg-danger">
+            <div class="inner">
+
+                <p>Total Expense Limit</p>
+                <p>
+                    @ViewBag.totlim
+                </p>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-sack-dollar"></i>
+            </div>
+            <a href="@Url.Action("Index","Limit")" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    @{
+        Html.RenderAction("CategoryList", "Home");
+    }
+</div>
+<div class="container">
+    @{
+        Html.RenderAction("ExpenseList", "Home");
+    }
+</div>
+
+
+
+

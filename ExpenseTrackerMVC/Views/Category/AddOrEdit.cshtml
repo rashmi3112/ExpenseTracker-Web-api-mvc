@@ -1,0 +1,44 @@
+﻿@model ExpenseTrackerMVC.Models.mvcCategoryModel
+@{
+    ViewBag.Title = "AddOrEdit Category";
+    Html.EnableClientValidation(true);
+}
+
+<div class="breadcrumb">
+    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="@Url.Action("Index","Home")"><i class="fa-solid fa-house"></i></a></li>
+            <li class="breadcrumb-item"><a href="@Url.Action("Index","Category")">Category</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Add or Update category</li>
+        </ol>
+    </nav>
+</div>
+
+
+<div class="form-body">
+    <h2 id="form-heading">Category</h2>
+    @using (Html.BeginForm())
+    {
+        @Html.HiddenFor(model => model.categoryId)
+        <div class="form-group">
+            @Html.Label("Category")
+            @Html.EditorFor(model => model.categoryName)
+            @Html.ValidationMessageFor(model => model.categoryName)
+        </div>
+        <div class="form-group">
+            @Html.Label("Amount")
+            @Html.EditorFor(model => model.amount)
+            @Html.ValidationMessageFor(model => model.amount)
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit" class="btn button" id="submit"/>
+            <input type="reset" value="Reset" class="btn button" id="reset"/>
+        </div>
+
+    }
+</div>
+
+@section scripts{
+    @Scripts.Render("~/bundles/jqueryval");
+}
+

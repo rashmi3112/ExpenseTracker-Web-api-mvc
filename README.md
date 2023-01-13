@@ -32,7 +32,6 @@ Category Panel
 ![Screenshot (725)](https://user-images.githubusercontent.com/80202363/212370949-3176d359-bbc1-4611-b723-dd4009216a8b.png)
 
 Expense Panel
-![Screenshot (726)](https://user-images.githubusercontent.com/80202363/212371018-eb898dbc-03c9-421c-9e05-57cbe49c3adf.png)
 ![Screenshot (727)](https://user-images.githubusercontent.com/80202363/212371388-06fc7e35-a938-4cb1-b6c9-71d8520b6fe0.png)
 ![Screenshot (729)](https://user-images.githubusercontent.com/80202363/212371357-00b5d9e5-fc26-436a-ab65-765493c8ffa5.png)
 

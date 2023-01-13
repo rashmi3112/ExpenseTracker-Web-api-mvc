@@ -20,14 +20,22 @@ Build the project using Ctrl+Shift+B. Now your project is built. In order to run
 
 Now you will be having two screens one for the api and another for the expense tracker application.
 
-This one is the api one Screenshot (728)
+This one is the api 
+![Screenshot (728)](https://user-images.githubusercontent.com/80202363/212370655-edd29056-b98c-4824-915c-037e49aab756.png)
 
-This one is the application
+Application
+Dashboard
+![Screenshot (723)](https://user-images.githubusercontent.com/80202363/212370862-cc728216-2401-4ca8-8c6c-1637ae697684.png)
 
-Dashboard Screenshot (723)
+Category Panel
+![Screenshot (724)](https://user-images.githubusercontent.com/80202363/212370944-77fc2417-280f-4251-924d-e24e67f17322.png)
+![Screenshot (725)](https://user-images.githubusercontent.com/80202363/212370949-3176d359-bbc1-4611-b723-dd4009216a8b.png)
 
-Category Panel Screenshot (724) Screenshot (726)
+Expense Panel
+![Screenshot (726)](https://user-images.githubusercontent.com/80202363/212371018-eb898dbc-03c9-421c-9e05-57cbe49c3adf.png)
+![Screenshot (727)](https://user-images.githubusercontent.com/80202363/212371388-06fc7e35-a938-4cb1-b6c9-71d8520b6fe0.png)
+![Screenshot (729)](https://user-images.githubusercontent.com/80202363/212371357-00b5d9e5-fc26-436a-ab65-765493c8ffa5.png)
 
-Expense Panel Screenshot (729) Screenshot (727)
-
-Limit Panel Screenshot (732) image
+Limit Panel
+![Screenshot (730)](https://user-images.githubusercontent.com/80202363/212371206-300be31e-0000-47c0-9697-46aae9c621db.png)
+![Screenshot (731)](https://user-images.githubusercontent.com/80202363/212371122-542fcf7a-19ea-4a7e-bfa9-a5624d5cdbe9.png)

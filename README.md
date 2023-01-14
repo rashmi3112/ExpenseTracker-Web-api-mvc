@@ -1,5 +1,5 @@
 # ExpenseTrackerApp
-Expense tracker is a personal expense management web application created using asp.net mvc architecture and api. This web application enables the user to add the category, daily expenses and set limit for those expenses. Also includes dashboard. The application contains Home, Category, Expense, Limit. It has a animated sidebar. The Category, Expense and limit contains list, form to add or edit and a button to delete which alerts the user before deletion. Also the alerts are shown while inserting, updating or deleting.
+Expense tracker is a personal expense management web application created using asp.net mvc architecture and api. This web application enables the user to add the category, daily expenses and set limit for those expenses. Also includes dashboard. The application contains Home, Category, Expense, Limit. It has a animated sidebar. The Category, Expense and limit contains list, form to add or edit and a button to delete which alerts the user before deletion. Also the alerts are shown while inserting, updating or deleting. Ease of navigation as breadcrumbs are used.
 
 The application is developed in Visual Studio 2022. HTML, CSS, javaScript, alertifyJs(package for alert), Jquery(for date picker) are used.
 
